@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahra Lathifa | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            light: '#f8fafc',
+                            accent: '#3b82f6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-bold text-lg tracking-tight text-slate-900">ZL.</a>
+            <div class="flex space-x-6 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-brand-accent transition">Tentang</a>
+                <a href="#skills" class="hover:text-brand-accent transition">Skills</a>
+                <a href="#projects" class="hover:text-brand-accent transition">Projek</a>
+                <a href="#experience" class="hover:text-brand-accent transition">Pengalaman</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="about" class="max-w-5xl mx-auto px-6 py-20 md:py-32 flex flex-col justify-center">
+        <p class="text-brand-accent font-semibold tracking-wide uppercase text-sm mb-3">Halo, saya</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-4">
+            Zahra Lathifa Prajnaparamita
+        </h1>
+        <h2 class="text-xl md:text-2xl font-medium text-slate-600 mb-6">
+            Informatics Student at Telkom University &bull; Software Developer
+        </h2>
+        <p class="text-base md:text-lg text-slate-600 max-w-3xl leading-relaxed mb-8">
+            Mahasiswa S1 Informatika Telkom University yang berfokus pada Backend Development, Software Engineering, dan Data Analysis. Menguasai bahasa Go, Python, Java, dan JavaScript, serta berpengalaman mengelola seluruh siklus SDLC—mulai dari perancangan arsitektur backend, manajemen basis data, deployment via Railway, hingga API testing menggunakan Postman. Memiliki kemampuan analisis dan komunikasi teknis yang kuat dari pengalaman sebagai Asisten Praktikum Algoritma & Struktur Data.
+        </p>
+        <div class="flex flex-wrap gap-4">
+            <a href="https://github.com/anameofanarca" target="_blank" class="bg-slate-900 hover:bg-slate-800 text-white font-medium text-sm px-6 py-3 rounded-lg shadow-sm transition flex items-center gap-2">
+                View My GitHub
+            </a>
+            <a href="mailto:anameofanarcha@gmail.com" class="border border-slate-300 hover:border-slate-400 bg-white text-slate-700 font-medium text-sm px-6 py-3 rounded-lg transition">
+                Hubungi Saya
+            </a>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="bg-white border-y border-slate-200 py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <h3 class="text-2xl font-bold text-slate-900 mb-8 tracking-tight">Keahlian & Tools</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                    <h4 class="font-semibold text-slate-900 mb-2 text-sm uppercase tracking-wider text-brand-accent">Languages</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Go, Python, Java, JavaScript, PHP, C++</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                    <h4 class="font-semibold text-slate-900 mb-2 text-sm uppercase tracking-wider text-brand-accent">Backend & DB</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">MySQL, PostgreSQL, REST API Architecture</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                    <h4 class="font-semibold text-slate-900 mb-2 text-sm uppercase tracking-wider text-brand-accent">Testing</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Postman (API Testing), Functional Testing, Debugging</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                    <h4 class="font-semibold text-slate-900 mb-2 text-sm uppercase tracking-wider text-brand-accent">Deployment</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Railway, Git & GitHub Version Control</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="max-w-5xl mx-auto px-6 py-20">
+        <h3 class="text-2xl font-bold text-slate-900 mb-2 tracking-tight">Projek Pilihan</h3>
+        <p class="text-slate-500 mb-10 text-sm">Beberapa repositori dan sistem yang pernah saya kembangkan.</p>
+
+        <div class="grid md:grid-cols-1 gap-8">
+            
+            <!-- PROJECT 1: Mommy Bakery -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-50 text-blue-600 text-xs font-semibold px-2.5 py-1 rounded">Go / PHP</span>
+                        <span class="bg-green-50 text-green-600 text-xs font-semibold px-2.5 py-1 rounded">OTP WA API</span>
+                        <span class="bg-purple-50 text-purple-600 text-xs font-semibold px-2.5 py-1 rounded">Railway Deployed</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Mommy Bakery — Aplikasi Web UMKM</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Aplikasi manajemen transaksi dan penjualan untuk UMKM kuliner yang dilengkapi dengan sistem Multi-Auth menggunakan verifikasi kode OTP WhatsApp otomatis.
+                    </p>
+                    <ul class="space-y-2 text-xs md:text-sm text-slate-600 mb-6 list-disc list-inside">
+                        <li><strong class="text-slate-900">Backend Engineering:</strong> Membangun arsitektur backend awal dan mengintegrasikan API eksternal untuk OTP.</li>
+                        <li><strong class="text-slate-900">Deployment:</strong> Mengelola proses deployment sistem ke cloud via Railway agar aplikasi stabil dan siap pakai.</li>
+                        <li><strong class="text-slate-900">Debugging:</strong> Menangani penelusuran *error* pada logika backend secara berkala demi menjamin stabilitas sistem produksi.</li>
+                    </ul>
+                </div>
+                <div class="pt-4 border-t border-slate-100 flex gap-4">
+                    <a href="https://github.com/anameofanarca/mommy-bakery.git" target="_blank" class="text-sm font-semibold text-brand-accent hover:underline flex items-center gap-1">
+                        Repository GitHub &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 2: CompuPay -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-50 text-blue-600 text-xs font-semibold px-2.5 py-1 rounded">REST API</span>
+                        <span class="bg-amber-50 text-amber-600 text-xs font-semibold px-2.5 py-1 rounded">Data Aggregation</span>
+                        <span class="bg-indigo-50 text-indigo-600 text-xs font-semibold px-2.5 py-1 rounded">Team Environment</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">CompuPay — Sistem Manajemen & Penggajian Karyawan</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Sistem ekosistem korporat berskala besar yang terbagi menjadi repositori Backend, Frontend Web, dan Mobile App untuk manajemen performa dan kompensasi karyawan.
+                    </p>
+                    <ul class="space-y-2 text-xs md:text-sm text-slate-600 mb-6 list-disc list-inside">
+                        <li><strong class="text-slate-900">Feature Development:</strong> Mengembangkan modul logika *Point Record* di backend untuk mengagregasi dan menjumlahkan poin performa karyawan.</li>
+                        <li><strong class="text-slate-900">API Integration:</strong> Menyediakan endpoint REST API yang stabil untuk dikonsumsi oleh tim Frontend dan Mobile.</li>
+                        <li><strong class="text-slate-900">Logic Validation:</strong> Melakukan unit-testing internal menggunakan Postman untuk memvalidasi akurasi formula perhitungan.</li>
+                    </ul>
+                </div>
+                <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-x-6 gap-y-2">
+                    <a href="https://github.com/Hikmat-2075/backend-CompuPay.git" target="_blank" class="text-sm font-semibold text-brand-accent hover:underline">
+                        Backend Repo &rarr;
+                    </a>
+                    <a href="https://github.com/aryafirmansyah2/Compupay-FE.git" target="_blank" class="text-sm text-slate-500 hover:underline">
+                        Frontend Repo
+                    </a>
+                    <a href="https://github.com/Hikmat-2075/CompuPay-Mobile.git" target="_blank" class="text-sm text-slate-500 hover:underline">
+                        Mobile Repo
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT 3: WebAdmin -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-amber-50 text-amber-600 text-xs font-semibold px-2.5 py-1 rounded">Frontend</span>
+                        <span class="bg-orange-50 text-orange-600 text-xs font-semibold px-2.5 py-1 rounded">JavaScript</span>
+                        <span class="bg-teal-50 text-teal-600 text-xs font-semibold px-2.5 py-1 rounded">UI Integration</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">WebAdmin — Panel Kontrol Dashboard</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Dashboard panel admin kolaboratif berbasis web yang dirancang untuk kebutuhan visualisasi data dan manajemen sistem.
+                    </p>
+                    <ul class="space-y-2 text-xs md:text-sm text-slate-600 mb-6 list-disc list-inside">
+                        <li><strong class="text-slate-900">Frontend Engineering:</strong> Fokus pada implementasi antarmuka pengguna (UI) yang dinamis, responsif, dan fungsional.</li>
+                        <li><strong class="text-slate-900">API Integration:</strong> Menghubungkan visualisasi data komponen web dengan konsumsi endpoint data backend secara real-time.</li>
+                    </ul>
+                </div>
+                <div class="pt-4 border-t border-slate-100 flex gap-4">
+                    <a href="https://github.com/ZLprajnaparamita/WebAdmin.git" target="_blank" class="text-sm font-semibold text-brand-accent hover:underline flex items-center gap-1">
+                        Repository GitHub &rarr;
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="bg-slate-100 border-t border-slate-200 py-20">
+        <div class="max-w-3xl mx-auto px-6">
+            <h3 class="text-2xl font-bold text-slate-900 mb-10 tracking-tight text-center">Pengalaman Singkat</h3>
+            
+            <div class="space-y-8 relative before:absolute before:inset-0 before:left-4 before:xs:left-5 before:md:left-5 before:bg-slate-300 before:w-0.5">
+                
+                <!-- Experience 1 -->
+                <div class="relative pl-8 md:pl-10">
+                    <div class="absolute left-2.5 md:left-3 top-1.5 bg-brand-accent w-3.5 h-3.5 rounded-full border-4 border-slate-100"></div>
+                    <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Februari 2025 – Sekarang</span>
+                    <h4 class="text-lg font-bold text-slate-900 mt-1">Asisten Praktikum Laboratorium Informatika</h4>
+                    <p class="text-sm text-brand-accent font-medium mb-2">Universitas Telkom</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Membimbing mahasiswa pada praktikum **Algoritma Pemrograman 2 (2026)** dan **Struktur Data (2025)**. Bertanggung jawab mengevaluasi logika program, memimpin sesi praktikum di lab, serta melakukan *code review* dan membantu *debugging* kendala teknis mahasiswa.
+                    </p>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="relative pl-8 md:pl-10">
+                    <div class="absolute left-2.5 md:left-3 top-1.5 bg-slate-400 w-3.5 h-3.5 rounded-full border-4 border-slate-100"></div>
+                    <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">November 2024 – 2025</span>
+                    <h4 class="text-lg font-bold text-slate-900 mt-1">Staff Operasional</h4>
+                    <p class="text-sm text-brand-accent font-medium mb-2">helPhin Indonesia</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Menjadi tim teknis pelaksana agenda responsi UTS dan UAS eksternal serta mengelola kelancaran alur operasional ujian berbasis manajemen data.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center text-sm border-t border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 space-y-3">
+            <p class="text-white font-medium">Zahra Lathifa Prajnaparamita</p>
+            <p class="text-slate-500 text-xs">Built with Tailwind CSS & HTML. Ready for deployment on Railway.</p>
+            <p class="pt-4 text-slate-600 text-xs">&copy; 2026 All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
